@@ -1,14 +1,14 @@
 const EventEmitter = require('events')
 //import EventEmitter from "events";
 
-const eventEmitter = new EventEmitter();
+const eventEmitter = new EventEmitter()
 
-eventEmitter.on("start", () => {
-  console.log("Durante");
+eventEmitter.on('start', () => {
+  console.log('Durante')
 });
 
-console.log("Antes");
+console.log('Antes')
 
-eventEmitter.emit("start");
+eventEmitter.emit('start')
 
-console.log("Depois");
+console.log('Depois')
